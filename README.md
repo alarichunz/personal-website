@@ -4,8 +4,7 @@ A personal site styled as a *Renaissance workshop* — a lifelong notebook,
 laboratory, and library rolled into one. Built with [Hugo](https://gohugo.io/)
 (Extended). 
 
-This repo is a **template / scaffold** — the structure, layouts, and styling are
-done; the content is placeholder. Replace the placeholders and build the meat.
+This repository contains the source, layouts, styling, and content for the site.
 
 ## Requirements
 
@@ -88,7 +87,7 @@ A post can mount a visual above its title via `hero`, routed by extension:
 | `/videos/foo.mp4\|webm` | autoplaying, looping, muted `<video>`        |
 
 A sketch module grabs `document.querySelector('[data-hero-canvas]')` and draws
-into it. See [`static/sketches/first-sketch.js`](static/sketches/first-sketch.js).
+into it.
 
 ## Theming
 
