@@ -1,0 +1,19 @@
+{{ define "main" }}
+<article class="section">
+  <header class="section-masthead">
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Content }}<div class="section-intro markdown">{{ . }}</div>{{ end }}
+
+  {{ $pages := .RegularPages.ByDate.Reverse }}
+  {{ with $pages }}
+  <div class="section-index">
+    {{ partial "entry-list.html" . }}
+  </div>
+  {{ else }}
+  <p class="section-empty">Nothing here yet — this room of the workshop is being set up.</p>
+  {{ end }}
+</article>
+{{ end }}

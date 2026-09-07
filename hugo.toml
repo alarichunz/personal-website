@@ -1,0 +1,76 @@
+# =============================================================================
+#  Alaric Hunziker — Hugo configuration
+#  A self-contained Hugo Extended site. Layouts and SCSS live in this repo
+#  (no external theme is fetched), modeled on hugo-book.
+#
+#  Local dev:   make run     (hugo server -D --noHTTPCache)
+#  Build:       make build   (hugo --minify  ->  ./public)
+# =============================================================================
+
+baseURL    = 'https://example.com/'
+title      = 'Alaric Hunziker'
+defaultContentLanguage = 'en'
+copyright  = '© 2026 Alaric Hunziker'
+
+# Set to true once this is a git repo to get commit/edit metadata.
+enableGitInfo      = false
+disablePathToLower = true
+
+# Pretty section URLs, no trailing index files in the menu noise.
+[taxonomies]
+  tag = 'tags'
+
+# -- Markdown / Goldmark -------------------------------------------------------
+[markup]
+  [markup.goldmark.renderer]
+    unsafe = true                       # allow raw HTML in MDX-ish content
+  [markup.goldmark.extensions.passthrough]
+    enable = true                       # pass math delimiters to KaTeX untouched
+    [markup.goldmark.extensions.passthrough.delimiters]
+      block  = [['$$', '$$'], ['\[', '\]']]
+      inline = [['$', '$'],  ['\(', '\)']]
+  [markup.tableOfContents]
+    startLevel = 2
+    endLevel   = 3
+  [markup.highlight]
+    style    = 'tango'                  # warm, restrained — re-themed via SCSS
+    noClasses = false                   # emit classes so SCSS can override
+
+# -- Top navigation menu -------------------------------------------------------
+[menu]
+  [[menu.main]]
+    name = 'Notebook'
+    pageRef = '/notebook'
+    weight = 10
+  [[menu.main]]
+    name = 'Laboratory'
+    pageRef = '/laboratory'
+    weight = 20
+  [[menu.main]]
+    name = 'Library'
+    pageRef = '/library'
+    weight = 30
+  [[menu.main]]
+    name = 'About'
+    pageRef = '/about'
+    weight = 40
+
+# -- Site params ---------------------------------------------------------------
+[params]
+  description = 'The lifelong workshop of an engineer-artist — essays, experiments, and a reading library.'
+  author      = 'Alaric Hunziker'
+  dateFormat  = 'January 2, 2006'
+
+  # Default color theme: 'light' | 'dark' | 'auto'
+  defaultTheme = 'light'
+
+  # Icon links shown in the top nav. `icon` selects the inline SVG
+  # (see layouts/partials/icon.html). Fill in your own URLs.
+  [[params.social]]
+    name = 'GitHub'
+    icon = 'github'
+    url  = 'https://github.com/'        # TODO: your profile
+  [[params.social]]
+    name = 'LinkedIn'
+    icon = 'linkedin'
+    url  = 'https://www.linkedin.com/'  # TODO: your profile

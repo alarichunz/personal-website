@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang }}" class="no-js">
+<head>
+  {{ partial "head.html" . }}
+</head>
+<body class="page-kind-{{ .Kind }} section-{{ .Section }}">
+  {{/* Apply stored theme before paint to avoid a flash. */}}
+  {{ template "theme-init" . }}
+
+  <header class="top-nav">
+    {{ partial "top-nav.html" . }}
+  </header>
+
+  <main class="page-shell">
+    {{ block "main" . }}{{ end }}
+  </main>
+
+  <footer class="site-footer">
+    {{ partial "footer.html" . }}
+  </footer>
+
+  {{ with resources.Get "js/theme-toggle.js" | js.Build | resources.Minify }}
+  <script defer src="{{ .RelPermalink }}"></script>
+  {{ end }}
+</body>
+</html>
+
+{{ define "theme-init" }}
+<script>
+  (function () {
+    document.documentElement.classList.remove('no-js');
+    var def = {{ default "light" .Site.Params.defaultTheme }};
+    var stored = localStorage.getItem('theme');
+    var theme = stored || def;
+    if (theme === 'auto') {
+      theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+    document.documentElement.dataset.theme = theme;
+  })();
+</script>
+{{ end }}

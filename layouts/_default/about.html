@@ -1,0 +1,12 @@
+{{ define "main" }}
+<article class="post about-page">
+  <header class="post-masthead">
+    <h1 class="post-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="post-desc">{{ . }}</p>{{ end }}
+  </header>
+
+  <div class="about-content markdown">
+    {{ .Content }}
+  </div>
+</article>
+{{ end }}

@@ -1,0 +1,22 @@
+<nav class="top-nav-inner" aria-label="Primary">
+  <a class="top-nav-brand" href="{{ "/" | relURL }}">
+    {{ .Site.Title }}
+  </a>
+
+  <div class="top-nav-links">
+    {{ range .Site.Menus.main }}
+    {{ $active := or ($.IsMenuCurrent "main" .) ($.HasMenuCurrent "main" .) }}
+    <a href="{{ .URL }}"{{ if $active }} aria-current="page"{{ end }}>{{ .Name }}</a>
+    {{ end }}
+
+    {{ range .Site.Params.social }}
+    <a class="nav-icon-link" href="{{ .url }}" rel="me noopener" target="_blank" aria-label="{{ .name }}" title="{{ .name }}">
+      {{- with .icon }}{{ partial "icon.html" . }}{{ else }}{{ .name }}{{ end -}}
+    </a>
+    {{ end }}
+
+    <button class="theme-toggle" type="button" aria-label="Toggle color theme" title="Toggle light / dark">
+      <span class="theme-toggle-icon" aria-hidden="true"></span>
+    </button>
+  </div>
+</nav>

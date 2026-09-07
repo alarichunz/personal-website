@@ -1,0 +1,1 @@
+This is the personal website and digital codex of Alaric Hunziker

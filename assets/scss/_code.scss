@@ -1,0 +1,45 @@
+@use 'tokens' as *;
+
+// Inline + block code. Chroma classes are re-tinted toward the bronze/graphite
+// palette so highlighting reads like an engineering manual, not a neon IDE.
+code, kbd, pre, samp {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+}
+
+:not(pre) > code {
+  background: var(--code-bg);
+  padding: 0.12em 0.4em;
+  border-radius: var(--radius);
+  color: var(--heading);
+}
+
+.markdown pre,
+.highlight pre,
+pre.chroma {
+  background: var(--code-bg);
+  border: var(--rule) solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  overflow-x: auto;
+  line-height: 1.5;
+}
+.markdown pre code { background: none; padding: 0; }
+
+// Chroma token re-theming (light + dark share the same vars).
+.chroma {
+  .k, .kd, .kn, .kr, .kt { color: var(--bronze-deep, var(--bronze)); font-weight: 600; } // keywords
+  .s, .s1, .s2, .sb, .sc { color: #5c7a52; }                                             // strings
+  .m, .mi, .mf, .mh       { color: #9a6a3a; }                                            // numbers
+  .c, .c1, .cm, .cp       { color: var(--subtle); font-style: italic; }                  // comments
+  .nf, .nx                { color: var(--heading); }                                     // functions
+  .o, .ow                 { color: var(--text); }                                        // operators
+  .nt                     { color: var(--bronze); }                                      // tags
+  .ln, .lnt               { color: var(--subtle); }                                      // line numbers
+  .hl { background: color-mix(in srgb, var(--bronze) 14%, transparent); display: block; }
+}
+
+[data-theme="dark"] .chroma {
+  .s, .s1, .s2 { color: #9fb487; }
+  .m, .mi, .mf { color: #d0a05f; }
+}

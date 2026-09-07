@@ -1,0 +1,54 @@
+{{ define "main" }}
+<div class="lib-page">
+  <div class="lib-content">
+<article class="section bookshelf-page">
+  <header class="section-masthead">
+    <h1 class="section-title">{{ .Title }}</h1>
+    {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
+  </header>
+
+  {{ with .Content }}<div class="section-intro markdown">{{ . }}</div>{{ end }}
+
+  {{/* Publications I admire — edit these links here. */}}
+  <p class="library-publications">
+    <span class="library-pub-label">Publications I admire:</span>
+    <a href="https://direct.mit.edu/daed" target="_blank" rel="noopener">Daedalus</a>
+    <span class="library-pub-sep">·</span>
+    <a href="https://www.economist.com" target="_blank" rel="noopener">The Economist</a>
+  </p>
+
+  {{ with hugo.Data.library }}
+  <div class="bookshelf">
+    {{ range .groups }}
+    <details class="shelf" open>
+      <summary class="shelf-label">
+        <span class="shelf-name">{{ .name }}</span>
+        <span class="shelf-count">{{ len .books }}</span>
+      </summary>
+      <ul class="shelf-grid">
+        {{ range $book := .books }}
+        <li class="book">
+          {{ if $book.goodreads }}
+          <a class="book-link" href="{{ $book.goodreads }}" target="_blank" rel="noopener"
+             aria-label="{{ $book.title }} by {{ $book.author }}">
+          {{ else }}
+          <div class="book-link">
+          {{ end }}
+            <span class="book-meta">
+              <span class="book-title">{{ $book.title }}</span>
+              <span class="book-author">{{ $book.author }}</span>
+            </span>
+          {{ if $book.goodreads }}</a>{{ else }}</div>{{ end }}
+        </li>
+        {{ end }}
+      </ul>
+    </details>
+    {{ end }}
+  </div>
+  {{ else }}
+  <p class="section-empty">The bookshelf data file (data/library.yaml) is missing.</p>
+  {{ end }}
+</article>
+  </div>
+</div>
+{{ end }}

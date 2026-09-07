@@ -1,0 +1,176 @@
+@use 'tokens' as *;
+
+// Shared entry list (home recent, section indexes) ---------------------------
+.entry-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 3rem minmax(0, 1fr);
+  gap: var(--space-3);
+  align-items: baseline;
+  padding: var(--space-2) 0;
+  border-bottom: var(--rule) solid var(--border);
+
+  &:last-child { border-bottom: 0; }
+}
+
+.entry-year {
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  color: var(--subtle);
+  font-variant-numeric: tabular-nums;
+}
+
+.entry-link {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  .entry-title { color: var(--heading); }
+  &:hover .entry-title { color: var(--link); }
+}
+
+.entry-desc {
+  color: var(--subtle);
+  font-size: var(--fs-sm);
+}
+
+// Section pages --------------------------------------------------------------
+.section-masthead { max-width: $content-width; margin: 0 auto var(--space-5); }
+.section-title    { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.75rem, 4vw, 2.5rem); margin: 0 0 var(--space-2); }
+.section-desc     { color: var(--subtle); font-size: 1.1rem; margin: 0; }
+.section-intro,
+.section-index    { max-width: $content-width; margin: 0 auto var(--space-5); }
+.section-empty    { max-width: $content-width; margin: 0 auto; color: var(--subtle); font-style: italic; }
+
+// Post pages -----------------------------------------------------------------
+.post-masthead {
+  max-width: $content-width;
+  margin: 0 auto var(--space-5);
+  text-align: center;
+}
+
+.post-eyebrow {
+  @include label;
+  margin: 0 0 var(--space-2);
+  a { color: var(--subtle); text-decoration: none; &:hover { color: var(--bronze); } }
+}
+
+.post-title { font-family: var(--font-display); font-weight: 400; font-size: clamp(1.8rem, 4vw, 2.75rem); margin: 0; line-height: 1.12; }
+.post-desc  { max-width: 34rem; margin: var(--space-3) auto 0; color: var(--subtle); font-size: 1.15rem; }
+
+.post-byline {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+  margin-top: var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--subtle);
+}
+
+// About page — centered, byline-free, no reading column.
+.about-content {
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+
+  p { margin: 0 auto var(--space-4); }
+  a { text-underline-offset: 3px; }
+}
+
+.post-hero {
+  max-width: $wide-width;
+  margin: 0 auto var(--space-5);
+}
+.post-hero-canvas,
+.post-hero-media {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: var(--rule) solid var(--border);
+  border-radius: var(--radius);
+}
+
+// Two-column reading grid with a sticky TOC (Book of Shaders feel).
+.post-grid {
+  display: grid;
+  grid-template-columns: minmax(0, $content-width) $toc-width;
+  gap: clamp(1.5rem, 4vw, 3rem);
+  justify-content: center;
+  align-items: start;
+  max-width: calc(#{$content-width} + #{$toc-width} + 3rem);
+  margin: 0 auto;
+}
+
+.post-content { min-width: 0; }
+
+.post-toc {
+  position: sticky;
+  top: 5rem;
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  max-height: calc(100vh - 7rem);
+  overflow: auto;
+
+  #TableOfContents ul { list-style: none; padding-left: var(--space-3); margin: 0; }
+  > #TableOfContents > ul { padding-left: 0; }
+
+  a {
+    display: block;
+    padding: 3px 0;
+    color: var(--subtle);
+    text-decoration: none;
+    &:hover { color: var(--text); }
+  }
+}
+
+.post-tags {
+  max-width: $content-width;
+  margin: var(--space-5) auto 0;
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.tag {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--subtle);
+  border: var(--rule) solid var(--border);
+  border-radius: var(--radius);
+  padding: 2px 8px;
+}
+
+@media (max-width: $bp-md) {
+  .post-grid { grid-template-columns: minmax(0, 1fr); }
+  .post-toc  { display: none; }
+}
+
+// Footer ---------------------------------------------------------------------
+.site-footer {
+  flex-shrink: 0;
+  border-top: var(--rule) solid var(--border);
+  margin-top: var(--space-6);
+}
+.site-footer-inner {
+  max-width: $nav-width;
+  margin: 0 auto;
+  padding: var(--space-4) clamp(1.25rem, 5vw, 2.5rem);
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--subtle);
+}
+.footer-mark { color: var(--bronze); }
+.footer-copy { margin: 0; }
+.footer-sep  { margin: 0 0.4em; opacity: 0.6; }

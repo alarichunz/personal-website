@@ -1,0 +1,689 @@
+{
+  "groups": [
+    {
+      "name": "History",
+      "topics": [
+        {
+          "title": "House of Wisdom",
+          "url": "https://en.wikipedia.org/wiki/House_of_Wisdom"
+        },
+        {
+          "title": "Destruction under the Mongol Empire",
+          "url": "https://en.wikipedia.org/wiki/Destruction_under_the_Mongol_Empire"
+        },
+        {
+          "title": "Matteo Ricci",
+          "url": "https://en.wikipedia.org/wiki/Matteo_Ricci"
+        },
+        {
+          "title": "Age of Enlightenment",
+          "url": "https://en.wikipedia.org/wiki/Age_of_Enlightenment"
+        },
+        {
+          "title": "American Civil War",
+          "url": "https://en.wikipedia.org/wiki/American_Civil_War"
+        },
+        {
+          "title": "Abraham Lincoln's second inaugural address",
+          "url": "https://en.wikipedia.org/wiki/Abraham_Lincoln%27s_second_inaugural_address"
+        },
+        {
+          "title": "Taiwan under Japanese rule",
+          "url": "https://en.wikipedia.org/wiki/Taiwan_under_Japanese_rule"
+        },
+        {
+          "title": "Tokugawa Iesato",
+          "url": "https://en.wikipedia.org/wiki/Tokugawa_Iesato"
+        },
+        {
+          "title": "World War I",
+          "url": "https://en.wikipedia.org/wiki/World_War_I"
+        },
+        {
+          "title": "Second Sino-Japanese War",
+          "url": "https://en.wikipedia.org/wiki/Second_Sino-Japanese_War"
+        },
+        {
+          "title": "World War II",
+          "url": "https://en.wikipedia.org/wiki/World_War_II"
+        },
+        {
+          "title": "Europe first",
+          "url": "https://en.wikipedia.org/wiki/Europe_first"
+        },
+        {
+          "title": "Pacific War",
+          "url": "https://en.wikipedia.org/wiki/Pacific_War"
+        },
+        {
+          "title": "Philippines campaign (1944–1945)",
+          "url": "https://en.wikipedia.org/wiki/Philippines_campaign_(1944%E2%80%931945)"
+        },
+        {
+          "title": "German submarine U-977",
+          "url": "https://en.wikipedia.org/wiki/German_submarine_U-977"
+        },
+        {
+          "title": "German submarine U-530",
+          "url": "https://en.wikipedia.org/wiki/German_submarine_U-530"
+        },
+        {
+          "title": "Chinese Civil War",
+          "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War"
+        },
+        {
+          "title": "Cold War",
+          "url": "https://en.wikipedia.org/wiki/Cold_War"
+        },
+        {
+          "title": "Korean War",
+          "url": "https://en.wikipedia.org/wiki/Korean_War"
+        },
+        {
+          "title": "Vietnam War",
+          "url": "https://en.wikipedia.org/wiki/Vietnam_War"
+        },
+        {
+          "title": "Shoichi Yokoi",
+          "url": "https://en.wikipedia.org/wiki/Shoichi_Yokoi"
+        },
+        {
+          "title": "Teruo Nakamura",
+          "url": "https://en.wikipedia.org/wiki/Teruo_Nakamura"
+        },
+        {
+          "title": "Hiroo Onoda",
+          "url": "https://en.wikipedia.org/wiki/Hiroo_Onoda"
+        }
+      ]
+    },
+    {
+      "name": "Economics & Finance",
+      "topics": [
+        {
+          "title": "Economics",
+          "url": "https://en.wikipedia.org/wiki/Economics"
+        },
+        {
+          "title": "Econometrics",
+          "url": "https://en.wikipedia.org/wiki/Econometrics"
+        },
+        {
+          "title": "Austrian school of economics",
+          "url": "https://en.wikipedia.org/wiki/Austrian_school_of_economics"
+        },
+        {
+          "title": "Chicago school of economics",
+          "url": "https://en.wikipedia.org/wiki/Chicago_school_of_economics"
+        },
+        {
+          "title": "Keynesian economics",
+          "url": "https://en.wikipedia.org/wiki/Keynesian_economics"
+        },
+        {
+          "title": "Monetarism",
+          "url": "https://en.wikipedia.org/wiki/Monetarism"
+        },
+        {
+          "title": "Communism",
+          "url": "https://en.wikipedia.org/wiki/Communism"
+        },
+        {
+          "title": "Henry George",
+          "url": "https://en.wikipedia.org/wiki/Henry_George"
+        },
+        {
+          "title": "George Stigler",
+          "url": "https://en.wikipedia.org/wiki/George_Stigler"
+        },
+        {
+          "title": "John D. Rockefeller",
+          "url": "https://en.wikipedia.org/wiki/John_D._Rockefeller"
+        },
+        {
+          "title": "Warren Buffett",
+          "url": "https://en.wikipedia.org/wiki/Warren_Buffett"
+        },
+        {
+          "title": "Peter Lynch",
+          "url": "https://en.wikipedia.org/wiki/Peter_Lynch"
+        },
+        {
+          "title": "John C. Bogle",
+          "url": "https://en.wikipedia.org/wiki/John_C._Bogle"
+        },
+        {
+          "title": "Index fund",
+          "url": "https://en.wikipedia.org/wiki/Index_fund"
+        },
+        {
+          "title": "Fidelity Magellan Fund",
+          "url": "https://en.wikipedia.org/wiki/Fidelity_Magellan_Fund"
+        },
+        {
+          "title": "Aladdin (BlackRock)",
+          "url": "https://en.wikipedia.org/wiki/Aladdin_(BlackRock)"
+        },
+        {
+          "title": "Commodity market",
+          "url": "https://en.wikipedia.org/wiki/Commodity_market"
+        },
+        {
+          "title": "Intermarket sweep order",
+          "url": "https://en.wikipedia.org/wiki/Intermarket_sweep_order"
+        },
+        {
+          "title": "Straight-through processing",
+          "url": "https://en.wikipedia.org/wiki/Straight-through_processing"
+        },
+        {
+          "title": "Freddie Mac",
+          "url": "https://en.wikipedia.org/wiki/Freddie_Mac"
+        },
+        {
+          "title": "Gnomes of Zurich",
+          "url": "https://en.wikipedia.org/wiki/Gnomes_of_Zurich"
+        },
+        {
+          "title": "United States non-interventionism",
+          "url": "https://en.wikipedia.org/wiki/United_States_non-interventionism"
+        },
+        {
+          "title": "Positive non-interventionism",
+          "url": "https://en.wikipedia.org/wiki/Positive_non-interventionism"
+        },
+        {
+          "title": "Congestion pricing",
+          "url": "https://en.wikipedia.org/wiki/Congestion_pricing"
+        },
+        {
+          "title": "Economic inequality",
+          "url": "https://en.wikipedia.org/wiki/Economic_inequality"
+        },
+        {
+          "title": "Gender pay gap",
+          "url": "https://en.wikipedia.org/wiki/Gender_pay_gap"
+        },
+        {
+          "title": "Economic consequences of population decline",
+          "url": "https://en.wikipedia.org/wiki/Economic_consequences_of_population_decline"
+        },
+        {
+          "title": "Pensions in Chile",
+          "url": "https://en.wikipedia.org/wiki/Pensions_in_Chile"
+        },
+        {
+          "title": "Blood diamond",
+          "url": "https://en.wikipedia.org/wiki/Blood_diamond"
+        },
+        {
+          "title": "Miracle of Chile",
+          "url": "https://en.wikipedia.org/wiki/Miracle_of_Chile"
+        },
+        {
+          "title": "Economy of Hong Kong",
+          "url": "https://en.wikipedia.org/wiki/Economy_of_Hong_Kong"
+        },
+        {
+          "title": "Economy of Switzerland",
+          "url": "https://en.wikipedia.org/wiki/Economy_of_Switzerland"
+        },
+        {
+          "title": "The Economist",
+          "url": "https://en.wikipedia.org/wiki/The_Economist"
+        }
+      ]
+    },
+    {
+      "name": "Philosophy & Religion",
+      "topics": [
+        {
+          "title": "Socrates",
+          "url": "https://en.wikipedia.org/wiki/Socrates"
+        },
+        {
+          "title": "Aristotle",
+          "url": "https://en.wikipedia.org/wiki/Aristotle"
+        },
+        {
+          "title": "Stoicism",
+          "url": "https://en.wikipedia.org/wiki/Stoicism"
+        },
+        {
+          "title": "Epictetus",
+          "url": "https://en.wikipedia.org/wiki/Epictetus"
+        },
+        {
+          "title": "Meditations",
+          "url": "https://en.wikipedia.org/wiki/Meditations"
+        },
+        {
+          "title": "Friedrich Nietzsche",
+          "url": "https://en.wikipedia.org/wiki/Friedrich_Nietzsche"
+        },
+        {
+          "title": "Meaning of life",
+          "url": "https://en.wikipedia.org/wiki/Meaning_of_life"
+        },
+        {
+          "title": "Fine-tuned universe",
+          "url": "https://en.wikipedia.org/wiki/Fine-tuned_universe"
+        },
+        {
+          "title": "The Unreasonable Effectiveness of Mathematics in the Natural Sciences",
+          "url": "https://en.wikipedia.org/wiki/The_Unreasonable_Effectiveness_of_Mathematics_in_the_Natural_Sciences"
+        },
+        {
+          "title": "Bhagavad Gita",
+          "url": "https://en.wikipedia.org/wiki/Bhagavad_Gita"
+        },
+        {
+          "title": "Book of Job",
+          "url": "https://en.wikipedia.org/wiki/Book_of_Job"
+        },
+        {
+          "title": "The Sheep and the Goats",
+          "url": "https://en.wikipedia.org/wiki/The_Sheep_and_the_Goats"
+        },
+        {
+          "title": "Thorn in the flesh",
+          "url": "https://en.wikipedia.org/wiki/Thorn_in_the_flesh"
+        },
+        {
+          "title": "Predestination",
+          "url": "https://en.wikipedia.org/wiki/Predestination"
+        },
+        {
+          "title": "Capital punishment in the Bible",
+          "url": "https://en.wikipedia.org/wiki/Capital_punishment_in_the_Bible"
+        },
+        {
+          "title": "Christian pacifism",
+          "url": "https://en.wikipedia.org/wiki/Christian_pacifism"
+        },
+        {
+          "title": "Protestant work ethic",
+          "url": "https://en.wikipedia.org/wiki/Protestant_work_ethic"
+        },
+        {
+          "title": "Wealth and religion",
+          "url": "https://en.wikipedia.org/wiki/Wealth_and_religion"
+        },
+        {
+          "title": "Homeless Jesus",
+          "url": "https://en.wikipedia.org/wiki/Homeless_Jesus"
+        },
+        {
+          "title": "John Vianney",
+          "url": "https://en.wikipedia.org/wiki/John_Vianney"
+        },
+        {
+          "title": "Carlo Acutis",
+          "url": "https://en.wikipedia.org/wiki/Carlo_Acutis"
+        },
+        {
+          "title": "Catholic Church in South Korea",
+          "url": "https://en.wikipedia.org/wiki/Catholic_Church_in_South_Korea"
+        },
+        {
+          "title": "Christianity in Korea",
+          "url": "https://en.wikipedia.org/wiki/Christianity_in_Korea"
+        }
+      ]
+    },
+    {
+      "name": "Literature",
+      "topics": [
+        {
+          "title": "Frankenstein",
+          "url": "https://en.wikipedia.org/wiki/Frankenstein"
+        },
+        {
+          "title": "Moby-Dick",
+          "url": "https://en.wikipedia.org/wiki/Moby-Dick"
+        },
+        {
+          "title": "Fyodor Dostoevsky",
+          "url": "https://en.wikipedia.org/wiki/Fyodor_Dostoevsky"
+        },
+        {
+          "title": "The Brothers Karamazov",
+          "url": "https://en.wikipedia.org/wiki/The_Brothers_Karamazov"
+        },
+        {
+          "title": "The Secret Life of Walter Mitty",
+          "url": "https://en.wikipedia.org/wiki/The_Secret_Life_of_Walter_Mitty"
+        },
+        {
+          "title": "The Alchemist (novel)",
+          "url": "https://en.wikipedia.org/wiki/The_Alchemist_(novel)"
+        }
+      ]
+    },
+    {
+      "name": "Engineering & Computer Science",
+      "topics": [
+        {
+          "title": "Engineering",
+          "url": "https://en.wikipedia.org/wiki/Engineering"
+        },
+        {
+          "title": "History of engineering",
+          "url": "https://en.wikipedia.org/wiki/History_of_engineering"
+        },
+        {
+          "title": "Computer science",
+          "url": "https://en.wikipedia.org/wiki/Computer_science"
+        },
+        {
+          "title": "Data structure",
+          "url": "https://en.wikipedia.org/wiki/Data_structure"
+        },
+        {
+          "title": "Hash table",
+          "url": "https://en.wikipedia.org/wiki/Hash_table"
+        },
+        {
+          "title": "Breadth-first search",
+          "url": "https://en.wikipedia.org/wiki/Breadth-first_search"
+        },
+        {
+          "title": "Neural network (machine learning)",
+          "url": "https://en.wikipedia.org/wiki/Neural_network_(machine_learning)"
+        },
+        {
+          "title": "Instruction pipelining",
+          "url": "https://en.wikipedia.org/wiki/Instruction_pipelining"
+        },
+        {
+          "title": "Mobile computing",
+          "url": "https://en.wikipedia.org/wiki/Mobile_computing"
+        },
+        {
+          "title": "Rubber duck debugging",
+          "url": "https://en.wikipedia.org/wiki/Rubber_duck_debugging"
+        },
+        {
+          "title": "Apple Vision Pro",
+          "url": "https://en.wikipedia.org/wiki/Apple_Vision_Pro"
+        },
+        {
+          "title": "Multi-directional Impact Protection System",
+          "url": "https://en.wikipedia.org/wiki/Multi-directional_Impact_Protection_System"
+        }
+      ]
+    },
+    {
+      "name": "Culture",
+      "topics": [
+        {
+          "title": "History of tea in Japan",
+          "url": "https://en.wikipedia.org/wiki/History_of_tea_in_Japan"
+        },
+        {
+          "title": "Japanese tea ceremony",
+          "url": "https://en.wikipedia.org/wiki/Japanese_tea_ceremony"
+        },
+        {
+          "title": "Gongfu tea",
+          "url": "https://en.wikipedia.org/wiki/Gongfu_tea"
+        },
+        {
+          "title": "Longjing tea",
+          "url": "https://en.wikipedia.org/wiki/Longjing_tea"
+        },
+        {
+          "title": "Sweet tea",
+          "url": "https://en.wikipedia.org/wiki/Sweet_tea"
+        },
+        {
+          "title": "Tea pet",
+          "url": "https://en.wikipedia.org/wiki/Tea_pet"
+        },
+        {
+          "title": "Tokoname ware",
+          "url": "https://en.wikipedia.org/wiki/Tokoname_ware"
+        },
+        {
+          "title": "Ichijū-sansai",
+          "url": "https://en.wikipedia.org/wiki/Ichij%C5%AB-sansai"
+        },
+        {
+          "title": "Japanese cheesecake",
+          "url": "https://en.wikipedia.org/wiki/Japanese_cheesecake"
+        },
+        {
+          "title": "Bonsai",
+          "url": "https://en.wikipedia.org/wiki/Bonsai"
+        },
+        {
+          "title": "Japanese dry garden",
+          "url": "https://en.wikipedia.org/wiki/Japanese_dry_garden"
+        },
+        {
+          "title": "Japanese Garden (Houston)",
+          "url": "https://en.wikipedia.org/wiki/Japanese_Garden_(Houston)"
+        },
+        {
+          "title": "National Cherry Blossom Festival",
+          "url": "https://en.wikipedia.org/wiki/National_Cherry_Blossom_Festival"
+        },
+        {
+          "title": "Baseball in Japan",
+          "url": "https://en.wikipedia.org/wiki/Baseball_in_Japan"
+        }
+      ]
+    },
+    {
+      "name": "Music",
+      "topics": [
+        {
+          "title": "Led Zeppelin",
+          "url": "https://en.wikipedia.org/wiki/Led_Zeppelin"
+        },
+        {
+          "title": "Rush (band)",
+          "url": "https://en.wikipedia.org/wiki/Rush_(band)"
+        },
+        {
+          "title": "Pink Floyd",
+          "url": "https://en.wikipedia.org/wiki/Pink_Floyd"
+        },
+        {
+          "title": "Any Colour You Like",
+          "url": "https://en.wikipedia.org/wiki/Any_Colour_You_Like"
+        },
+        {
+          "title": "Daft Punk",
+          "url": "https://en.wikipedia.org/wiki/Daft_Punk"
+        },
+        {
+          "title": "Fado",
+          "url": "https://en.wikipedia.org/wiki/Fado"
+        },
+        {
+          "title": "Japanese jazz",
+          "url": "https://en.wikipedia.org/wiki/Japanese_jazz"
+        },
+        {
+          "title": "Jazz kissa",
+          "url": "https://en.wikipedia.org/wiki/Jazz_kissa"
+        },
+        {
+          "title": "Meikyoku kissa",
+          "url": "https://en.wikipedia.org/wiki/Meikyoku_kissa"
+        },
+        {
+          "title": "Village Vanguard",
+          "url": "https://en.wikipedia.org/wiki/Village_Vanguard"
+        }
+      ]
+    },
+    {
+      "name": "Geography",
+      "topics": [
+        {
+          "title": "California",
+          "url": "https://en.wikipedia.org/wiki/California"
+        },
+        {
+          "title": "Washington (state)",
+          "url": "https://en.wikipedia.org/wiki/Washington_(state)"
+        },
+        {
+          "title": "Colorado",
+          "url": "https://en.wikipedia.org/wiki/Colorado"
+        },
+        {
+          "title": "New Hampshire",
+          "url": "https://en.wikipedia.org/wiki/New_Hampshire"
+        },
+        {
+          "title": "North Carolina",
+          "url": "https://en.wikipedia.org/wiki/North_Carolina"
+        },
+        {
+          "title": "Tennessee",
+          "url": "https://en.wikipedia.org/wiki/Tennessee"
+        },
+        {
+          "title": "Texas",
+          "url": "https://en.wikipedia.org/wiki/Texas"
+        },
+        {
+          "title": "Austin, Texas",
+          "url": "https://en.wikipedia.org/wiki/Austin,_Texas"
+        },
+        {
+          "title": "Climate change in Texas",
+          "url": "https://en.wikipedia.org/wiki/Climate_change_in_Texas"
+        },
+        {
+          "title": "Canada",
+          "url": "https://en.wikipedia.org/wiki/Canada"
+        },
+        {
+          "title": "Argentina",
+          "url": "https://en.wikipedia.org/wiki/Argentina"
+        },
+        {
+          "title": "Switzerland",
+          "url": "https://en.wikipedia.org/wiki/Switzerland"
+        },
+        {
+          "title": "Germany",
+          "url": "https://en.wikipedia.org/wiki/Germany"
+        },
+        {
+          "title": "Florence",
+          "url": "https://en.wikipedia.org/wiki/Florence"
+        },
+        {
+          "title": "Tavira",
+          "url": "https://en.wikipedia.org/wiki/Tavira"
+        },
+        {
+          "title": "Cycling in the Netherlands",
+          "url": "https://en.wikipedia.org/wiki/Cycling_in_the_Netherlands"
+        },
+        {
+          "title": "Deadman's Island (Kent)",
+          "url": "https://en.wikipedia.org/wiki/Deadman%27s_Island_(Kent)"
+        },
+        {
+          "title": "Japan",
+          "url": "https://en.wikipedia.org/wiki/Japan"
+        },
+        {
+          "title": "Osaka",
+          "url": "https://en.wikipedia.org/wiki/Osaka"
+        },
+        {
+          "title": "Shōdoshima",
+          "url": "https://en.wikipedia.org/wiki/Sh%C5%8Ddoshima"
+        },
+        {
+          "title": "Taiwan",
+          "url": "https://en.wikipedia.org/wiki/Taiwan"
+        },
+        {
+          "title": "Taiwanese Mandarin",
+          "url": "https://en.wikipedia.org/wiki/Taiwanese_Mandarin"
+        },
+        {
+          "title": "Singapore",
+          "url": "https://en.wikipedia.org/wiki/Singapore"
+        },
+        {
+          "title": "Malaysia",
+          "url": "https://en.wikipedia.org/wiki/Malaysia"
+        }
+      ]
+    },
+    {
+      "name": "Miscellaneous",
+      "topics": [
+        {
+          "title": "Jensen Huang",
+          "url": "https://en.wikipedia.org/wiki/Jensen_Huang"
+        },
+        {
+          "title": "Horacio Pagani (auto executive)",
+          "url": "https://en.wikipedia.org/wiki/Horacio_Pagani_(auto_executive)"
+        },
+        {
+          "title": "Jeanne Calment",
+          "url": "https://en.wikipedia.org/wiki/Jeanne_Calment"
+        },
+        {
+          "title": "Emanuel Bronner",
+          "url": "https://en.wikipedia.org/wiki/Emanuel_Bronner"
+        },
+        {
+          "title": "Castile soap",
+          "url": "https://en.wikipedia.org/wiki/Castile_soap"
+        },
+        {
+          "title": "Vegan soap",
+          "url": "https://en.wikipedia.org/wiki/Vegan_soap"
+        },
+        {
+          "title": "Dr. Bronner's Magic Soaps",
+          "url": "https://en.wikipedia.org/wiki/Dr._Bronner%27s_Magic_Soaps"
+        },
+        {
+          "title": "Adventist Health Studies",
+          "url": "https://en.wikipedia.org/wiki/Adventist_Health_Studies"
+        },
+        {
+          "title": "Singapore math",
+          "url": "https://en.wikipedia.org/wiki/Singapore_math"
+        },
+        {
+          "title": "National Geographic",
+          "url": "https://en.wikipedia.org/wiki/National_Geographic"
+        },
+        {
+          "title": "University of Notre Dame",
+          "url": "https://en.wikipedia.org/wiki/University_of_Notre_Dame"
+        },
+        {
+          "title": "Mission Revival architecture",
+          "url": "https://en.wikipedia.org/wiki/Mission_Revival_architecture"
+        },
+        {
+          "title": "Running boom of the 1970s",
+          "url": "https://en.wikipedia.org/wiki/Running_boom_of_the_1970s"
+        },
+        {
+          "title": "Athletics at the 1904 Summer Olympics – Men's marathon",
+          "url": "https://en.wikipedia.org/wiki/Athletics_at_the_1904_Summer_Olympics_%E2%80%93_Men%27s_marathon"
+        },
+        {
+          "title": "Time Cube",
+          "url": "https://en.wikipedia.org/wiki/Time_Cube"
+        }
+      ]
+    }
+  ]
+}

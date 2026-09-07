@@ -1,0 +1,35 @@
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+{{- $title := .Title -}}
+{{- if .IsHome }}{{ $title = .Site.Title }}{{ else }}{{ $title = printf "%s · %s" .Title .Site.Title }}{{ end -}}
+<title>{{ $title }}</title>
+
+{{- with or .Description .Site.Params.description }}
+<meta name="description" content="{{ . }}" />
+{{- end }}
+<meta name="author" content="{{ .Site.Params.author }}" />
+
+{{/* Open Graph */}}
+<meta property="og:title" content="{{ .Title | default .Site.Title }}" />
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+{{- with or .Description .Site.Params.description }}
+<meta property="og:description" content="{{ . }}" />
+{{- end }}
+
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "favicon-32.png" | relURL }}" />
+<link rel="icon" type="image/png" sizes="256x256" href="{{ "favicon.png" | relURL }}" />
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "apple-touch-icon.png" | relURL }}" />
+
+{{/* Libre Caslon is vendored locally — see static/fonts/ and the @font-face
+     rules in assets/scss/_fonts.scss (compiled into the main stylesheet). */}}
+
+{{/* Compile SCSS via Hugo Pipes (requires Hugo Extended). */}}
+{{ $opts := dict "transpiler" "dartsass" "outputStyle" "compressed" "enableSourceMap" hugo.IsServer }}
+{{ with resources.Get "scss/main.scss" }}
+  {{ $css := . | toCSS $opts | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" />
+{{ end }}
+
+{{ block "head" . }}{{ end }}

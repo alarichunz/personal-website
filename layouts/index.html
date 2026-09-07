@@ -1,0 +1,35 @@
+{{ define "main" }}
+<article class="home">
+
+  {{/* Lead / identity. Pulls from content/_index.md body. */}}
+  <section class="home-lead">
+    <img class="home-emblem" src="/images/aerial_screw.png" alt="Leonardo da Vinci's aerial screw" width="200" height="200">
+    {{ with .Title }}<h1 class="home-title">{{ . }}</h1>{{ end }}
+    {{ with .Content }}<div class="home-intro">{{ . }}</div>{{ end }}
+  </section>
+
+  {{/* Index of the four rooms of the workshop. */}}
+  <section class="home-rooms" aria-label="Sections">
+    {{ range .Site.Menus.main }}
+    {{ $room := site.GetPage .PageRef }}
+    {{ if $room }}
+    <a class="room-card" href="{{ .URL }}">
+      <h2 class="room-name">{{ .Name }}</h2>
+      {{ with $room.Description }}<p class="room-desc">{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+    {{ end }}
+  </section>
+
+  {{/* Most recent work across the writing sections. */}}
+  {{ $recent := where .Site.RegularPages "Section" "in" (slice "notebook" "laboratory") }}
+  {{ $recent = first 6 (sort $recent "Date" "desc") }}
+  {{ with $recent }}
+  <section class="home-recent">
+    <h3 class="block-heading">Recent</h3>
+    {{ partial "entry-list.html" . }}
+  </section>
+  {{ end }}
+
+</article>
+{{ end }}

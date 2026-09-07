@@ -1,0 +1,92 @@
+// -----------------------------------------------------------------------------
+//  Design tokens — palette, type scale, spacing. Exposed as CSS custom
+//  properties so the light/dark themes can swap them at runtime.
+// -----------------------------------------------------------------------------
+
+// Static SCSS values reused in media queries / calc.
+$content-width:  44rem;   // comfortable measure for body text
+$wide-width:     72rem;   // section indexes, home
+$nav-width:      88rem;   // top-nav max
+$toc-width:      15rem;
+
+$bp-md: 900px;
+$bp-sm: 640px;
+
+:root {
+  // — Type families ————————————————————————————————————————
+  // Caslon — the typeface of Franklin's press. Libre Caslon is a free revival;
+  // Display cut for titles, Text cut for body, with system serifs as fallback.
+  --font-serif:   "Libre Caslon Text", "Adobe Caslon Pro", "Big Caslon",
+                  "Palatino Linotype", Palatino, Georgia, serif;
+  --font-display: "Libre Caslon Display", "Libre Caslon Text", "Big Caslon",
+                  Georgia, serif;
+  --font-sans:  ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
+                Helvetica, Arial, sans-serif;
+  --font-mono:  ui-monospace, "SF Mono", "JetBrains Mono", "Fira Code", Menlo,
+                Consolas, monospace;
+
+  // — Type scale ————————————————————————————————————————————
+  --fs-base:   1.0625rem;   // 17px
+  --fs-sm:     0.9rem;
+  --fs-xs:     0.78rem;
+  --lh-base:   1.66;
+  --measure:   #{$content-width};
+
+  // — Spacing ———————————————————————————————————————————————
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 1rem;
+  --space-4: 1.5rem;
+  --space-5: 2.5rem;
+  --space-6: 4rem;
+
+  --radius: 2px;            // barely-there — drafting precision, not bubbly
+  --rule:   1px;
+}
+
+// Small-caps sans label — eyebrows, section headings, gutters.
+@mixin label {
+  font-family: var(--font-sans);
+  font-size: var(--fs-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--subtle);
+}
+
+// — Light theme: parchment / graphite / bronze ——————————————————————————
+:root,
+[data-theme="light"] {
+  --parchment:  #f4efe4;   // page background
+  --warm-white: #faf6ec;   // raised surfaces (cards)
+  --stone:      #e3dccd;   // hairlines, borders
+  --graphite:   #2b2a27;   // body text
+  --charcoal:   #181714;   // headings
+  --muted:      #6f6857;   // secondary text, labels
+  --bronze:     #8a6a3b;   // links, accents
+  --bronze-deep:#6e5230;
+
+  --bg:        var(--parchment);
+  --surface:   var(--warm-white);
+  --border:    var(--stone);
+  --text:      var(--graphite);
+  --heading:   var(--charcoal);
+  --subtle:    var(--muted);
+  --link:      var(--bronze);
+  --link-hover:var(--bronze-deep);
+  --code-bg:   #ece5d6;
+  --selection: #e8d9b8;
+}
+
+// — Dark theme: black, lamp-lit by bronze ———————————————————————————————————
+[data-theme="dark"] {
+  --bg:        #000000;
+  --surface:   #0d0d0d;
+  --border:    #262626;
+  --text:      #cfcabd;
+  --heading:   #f2eee3;
+  --subtle:    #8a857a;
+  --link:      #c79a5f;
+  --link-hover:#e0b878;
+  --code-bg:   #111111;
+  --selection: #3a2f1c;
+}

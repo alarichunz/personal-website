@@ -1,0 +1,99 @@
+@use 'tokens' as *;
+
+.library-publications {
+  max-width: $content-width;
+  margin: 0 auto var(--space-4);
+  font-family: var(--font-sans);
+  font-size: var(--fs-sm);
+  color: var(--subtle);
+
+  a { color: var(--bronze); text-decoration: none; &:hover { color: var(--link-hover); } }
+}
+
+.library-pub-label { margin-right: var(--space-1); }
+.library-pub-sep { margin: 0 0.4em; opacity: 0.6; }
+
+// A grid of book titles grouped by theme — the Library bookshelf.
+.bookshelf {
+  display: grid;
+  gap: var(--space-6);
+  margin-top: var(--space-5);
+}
+
+.shelf-label {
+  @include label;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin: 0 0 var(--space-4);
+  padding-bottom: var(--space-1);
+  border-bottom: var(--rule) solid var(--border);
+  cursor: pointer;
+  list-style: none;          // Firefox
+  &::-webkit-details-marker { display: none; }  // Safari/Chrome
+
+  // Chevron — points right when collapsed, down when open.
+  &::before {
+    content: "";
+    flex: none;
+    width: 0.4em;
+    height: 0.4em;
+    border-right: var(--rule) solid currentColor;
+    border-bottom: var(--rule) solid currentColor;
+    transform: rotate(-45deg);
+    transition: transform 0.18s ease;
+    opacity: 0.7;
+  }
+}
+
+.shelf[open] > .shelf-label::before {
+  transform: rotate(45deg);
+}
+
+.shelf-count {
+  margin-left: auto;
+  font-variant-numeric: tabular-nums;
+  color: var(--subtle);
+  opacity: 0.8;
+}
+
+.shelf-grid {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+  gap: var(--space-3) var(--space-5);
+}
+
+.book { min-width: 0; }
+
+.book-link {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-decoration: none;
+  color: inherit;
+}
+
+.book-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.book-title {
+  font-size: var(--fs-sm);
+  line-height: 1.2;
+  color: var(--heading);
+}
+a.book-link:hover .book-title { color: var(--link); }
+
+.book-author {
+  font-size: var(--fs-xs);
+  color: var(--subtle);
+}
+
+@media (max-width: $bp-sm) {
+  .shelf-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
+}

@@ -1,0 +1,59 @@
+@use 'tokens' as *;
+
+.markdown {
+  color: var(--text);
+
+  p, ul, ol, blockquote, table, figure, pre { margin: 0 0 var(--space-4); }
+
+  h2, h3, h4 {
+    margin: var(--space-5) 0 var(--space-3);
+    scroll-margin-top: 5rem;
+  }
+  h2 {
+    font-size: 1.55rem;
+    padding-bottom: var(--space-1);
+    border-bottom: var(--rule) solid var(--border);
+  }
+  h3 { font-size: 1.25rem; }
+  h4 { font-size: 1.05rem; font-family: var(--font-sans); letter-spacing: 0.02em; }
+
+  // Anchor links revealed on heading hover.
+  h2, h3, h4 {
+    a.anchor { opacity: 0; margin-left: 0.35em; font-size: 0.7em; text-decoration: none; }
+    &:hover a.anchor { opacity: 0.6; }
+  }
+
+  ul, ol { padding-left: 1.4rem; }
+  li { margin-bottom: var(--space-1); }
+  li::marker { color: var(--bronze); }
+
+  blockquote {
+    border-left: 2px solid var(--bronze);
+    padding-left: var(--space-3);
+    color: var(--subtle);
+    font-style: italic;
+  }
+
+  img { display: block; margin: var(--space-4) auto; border-radius: var(--radius); }
+
+  figure { margin-inline: 0; }
+  figcaption {
+    text-align: center;
+    font-family: var(--font-sans);
+    font-size: var(--fs-xs);
+    color: var(--subtle);
+    margin-top: var(--space-2);
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: var(--fs-sm);
+    margin-top: var(--space-6);
+  }
+  th, td { padding: var(--space-2) var(--space-3); border-bottom: var(--rule) solid var(--border); text-align: left; }
+  th { font-family: var(--font-sans); color: var(--heading); }
+
+  // KaTeX overflow on mobile
+  .katex-display { overflow-x: auto; overflow-y: hidden; }
+}
