@@ -1,5 +1,6 @@
 # Hugo build output & cache
 /public/
+/dist/
 /resources/_gen/
 .hugo_build.lock
 
