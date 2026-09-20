@@ -1,4 +1,4 @@
 +++
-title = 'Laboratory'
-description = 'Personal projects, research, and experiments'
+title = 'Research'
+description = 'Projects and experiments'
 +++

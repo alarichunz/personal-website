@@ -1,7 +1,6 @@
 @use 'tokens' as *;
 
-// Two-column layout for the Library/Topics pages: a sticky toggle in the left
-// margin + the page content. Collapses to a top row on narrow screens.
+// Responsive layout wrapper for the Library page.
 .lib-page {
   display: flex;
   align-items: flex-start;
@@ -13,55 +12,6 @@
   min-width: 0;
 }
 
-.lib-toggle {
-  position: sticky;
-  top: 5.5rem;
-  flex: 0 0 auto;
-  width: 9rem;
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-1);
-}
-
-.lib-toggle-item {
-  display: block;
-  padding: var(--space-2) var(--space-3);
-
-  // Caslon, uppercase with tracking — echoes the section labels.
-  font-family: var(--font-serif);
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  line-height: 1.2;
-
-  color: var(--subtle);
-  text-decoration: none;
-  border-left: 3px solid var(--border);
-  transition: color 0.15s ease, border-color 0.15s ease;
-
-  &:hover { color: var(--text); border-left-color: var(--bronze); }
-
-  &.is-active {
-    color: var(--heading);
-    border-left-color: var(--bronze);
-  }
-}
-
 @media (max-width: $bp-md) {
   .lib-page { flex-direction: column; gap: var(--space-3); }
-
-  .lib-toggle {
-    position: static;
-    flex-direction: row;
-    width: auto;
-    gap: var(--space-4);
-    margin: 0 auto;
-  }
-
-  .lib-toggle-item {
-    border-left: 0;
-    border-bottom: 2px solid var(--border);
-    padding: var(--space-1) var(--space-2);
-  }
 }

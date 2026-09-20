@@ -28,17 +28,12 @@
       <ul class="shelf-grid">
         {{ range $book := .books }}
         <li class="book">
-          {{ if $book.goodreads }}
-          <a class="book-link" href="{{ $book.goodreads }}" target="_blank" rel="noopener"
-             aria-label="{{ $book.title }} by {{ $book.author }}">
-          {{ else }}
           <div class="book-link">
-          {{ end }}
             <span class="book-meta">
               <span class="book-title">{{ $book.title }}</span>
               <span class="book-author">{{ $book.author }}</span>
             </span>
-          {{ if $book.goodreads }}</a>{{ else }}</div>{{ end }}
+          </div>
         </li>
         {{ end }}
       </ul>

@@ -1,11 +1,27 @@
 {{ define "main" }}
 <article class="section">
   <header class="section-masthead">
+    {{ with .Parent }}
+    {{ if .IsSection }}<p class="section-parent"><a href="{{ .RelPermalink }}">← {{ .Title }}</a></p>{{ end }}
+    {{ end }}
     <h1 class="section-title">{{ .Title }}</h1>
     {{ with .Description }}<p class="section-desc">{{ . }}</p>{{ end }}
   </header>
 
   {{ with .Content }}<div class="section-intro markdown">{{ . }}</div>{{ end }}
+
+  {{ $sections := .Sections.ByWeight }}
+  {{ if eq .Params.show_subsections false }}{{ $sections = slice }}{{ end }}
+  {{ with $sections }}
+  <section class="home-rooms" aria-label="{{ $.Title }} sections">
+    {{ range . }}
+    <a class="room-card" href="{{ .RelPermalink }}">
+      <h2 class="room-name">{{ .Title }}</h2>
+      {{ with .Description }}<p class="room-desc">{{ . }}</p>{{ end }}
+    </a>
+    {{ end }}
+  </section>
+  {{ end }}
 
   {{ $pages := .RegularPages.ByDate.Reverse }}
   {{ with $pages }}
@@ -13,7 +29,9 @@
     {{ partial "entry-list.html" . }}
   </div>
   {{ else }}
-  <p class="section-empty">Nothing here yet — this room of the workshop is being set up.</p>
+  {{ if not $sections }}
+  <p class="section-empty">Nothing here yet — this section of the codex is being set up.</p>
+  {{ end }}
   {{ end }}
 </article>
 {{ end }}

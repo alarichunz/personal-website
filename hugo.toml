@@ -4,7 +4,7 @@
 #  (no external theme is fetched), modeled on hugo-book.
 #
 #  Local dev:   make run     (hugo server -D --noHTTPCache)
-#  Build:       make build   (hugo --minify  ->  ./public)
+#  Build:       make build   (clean production output in ./public and ./dist)
 # =============================================================================
 
 baseURL    = 'https://example.com/'
@@ -16,25 +16,13 @@ copyright  = '© 2026 Alaric Hunziker'
 enableGitInfo      = false
 disablePathToLower = true
 
-# Pretty section URLs, no trailing index files in the menu noise.
-[taxonomies]
-  tag = 'tags'
+# Article taxonomies are not used by the current pages.
+disableKinds = ['taxonomy', 'term']
 
 # -- Markdown / Goldmark -------------------------------------------------------
 [markup]
   [markup.goldmark.renderer]
-    unsafe = true                       # allow raw HTML in MDX-ish content
-  [markup.goldmark.extensions.passthrough]
-    enable = true                       # pass math delimiters to KaTeX untouched
-    [markup.goldmark.extensions.passthrough.delimiters]
-      block  = [['$$', '$$'], ['\[', '\]']]
-      inline = [['$', '$'],  ['\(', '\)']]
-  [markup.tableOfContents]
-    startLevel = 2
-    endLevel   = 3
-  [markup.highlight]
-    style    = 'tango'                  # warm, restrained — re-themed via SCSS
-    noClasses = false                   # emit classes so SCSS can override
+    unsafe = true                       # allow raw HTML in page content
 
 # -- Top navigation menu -------------------------------------------------------
 [menu]
@@ -43,23 +31,30 @@ disablePathToLower = true
     pageRef = '/notebook'
     weight = 10
   [[menu.main]]
-    name = 'Laboratory'
+    name = 'Research'
     pageRef = '/laboratory'
     weight = 20
   [[menu.main]]
+    name = 'ExecuTorch Contributions'
+    pageRef = '/executorch-contributions'
+    weight = 30
+  [[menu.main]]
+    name = 'Oil Paintings'
+    pageRef = '/arts'
+    weight = 40
+  [[menu.main]]
     name = 'Library'
     pageRef = '/library'
-    weight = 30
+    weight = 50
   [[menu.main]]
     name = 'About'
     pageRef = '/about'
-    weight = 40
+    weight = 60
 
 # -- Site params ---------------------------------------------------------------
 [params]
   description = 'The lifelong workshop of an engineer-artist — essays, experiments, and a reading library.'
   author      = 'Alaric Hunziker'
-  dateFormat  = 'January 2, 2006'
 
   # Default color theme: 'light' | 'dark' | 'auto'
   defaultTheme = 'light'

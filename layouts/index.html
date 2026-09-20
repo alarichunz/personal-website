@@ -3,12 +3,12 @@
 
   {{/* Lead / identity. Pulls from content/_index.md body. */}}
   <section class="home-lead">
-    <img class="home-emblem" src="/images/aerial_screw.png" alt="Leonardo da Vinci's aerial screw" width="200" height="200">
+    {{ partial "aerial-screw.html" . }}
     {{ with .Title }}<h1 class="home-title">{{ . }}</h1>{{ end }}
     {{ with .Content }}<div class="home-intro">{{ . }}</div>{{ end }}
   </section>
 
-  {{/* Index of the four rooms of the workshop. */}}
+  {{/* Index of the rooms of the workshop. */}}
   <section class="home-rooms" aria-label="Sections">
     {{ range .Site.Menus.main }}
     {{ $room := site.GetPage .PageRef }}
@@ -20,16 +20,6 @@
     {{ end }}
     {{ end }}
   </section>
-
-  {{/* Most recent work across the writing sections. */}}
-  {{ $recent := where .Site.RegularPages "Section" "in" (slice "notebook" "laboratory") }}
-  {{ $recent = first 6 (sort $recent "Date" "desc") }}
-  {{ with $recent }}
-  <section class="home-recent">
-    <h3 class="block-heading">Recent</h3>
-    {{ partial "entry-list.html" . }}
-  </section>
-  {{ end }}
 
 </article>
 {{ end }}

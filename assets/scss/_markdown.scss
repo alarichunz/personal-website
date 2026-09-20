@@ -17,12 +17,6 @@
   h3 { font-size: 1.25rem; }
   h4 { font-size: 1.05rem; font-family: var(--font-sans); letter-spacing: 0.02em; }
 
-  // Anchor links revealed on heading hover.
-  h2, h3, h4 {
-    a.anchor { opacity: 0; margin-left: 0.35em; font-size: 0.7em; text-decoration: none; }
-    &:hover a.anchor { opacity: 0.6; }
-  }
-
   ul, ol { padding-left: 1.4rem; }
   li { margin-bottom: var(--space-1); }
   li::marker { color: var(--bronze); }
@@ -54,6 +48,4 @@
   th, td { padding: var(--space-2) var(--space-3); border-bottom: var(--rule) solid var(--border); text-align: left; }
   th { font-family: var(--font-sans); color: var(--heading); }
 
-  // KaTeX overflow on mobile
-  .katex-display { overflow-x: auto; overflow-y: hidden; }
 }

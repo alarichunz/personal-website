@@ -5,338 +5,271 @@
       "books": [
         {
           "title": "Life of Pi",
-          "author": "Yann Martel",
-          "cover": "/images/library/life-of-pi.jpg"
+          "author": "Yann Martel"
         },
         {
           "title": "The Alchemist",
-          "author": "Paulo Coelho",
-          "cover": "/images/library/the-alchemist.jpg"
+          "author": "Paulo Coelho"
         },
         {
           "title": "Kafka on the Shore",
-          "author": "Haruki Murakami",
-          "cover": "/images/library/kafka-on-the-shore.jpg"
+          "author": "Haruki Murakami"
         },
         {
           "title": "The 100-Year-Old Man Who Climbed Out the Window and Disappeared",
-          "author": "Jonas Jonasson",
-          "cover": "/images/library/hundred-year-old-man.jpg"
+          "author": "Jonas Jonasson"
         },
         {
           "title": "The Stranger",
-          "author": "Albert Camus",
-          "cover": "/images/library/the-stranger.jpg"
+          "author": "Albert Camus"
         },
         {
           "title": "Heart of Darkness",
-          "author": "Joseph Conrad",
-          "cover": "/images/library/heart-of-darkness.jpg"
+          "author": "Joseph Conrad"
         },
         {
           "title": "Moby-Dick; or, The Whale",
-          "author": "Herman Melville",
-          "cover": "/images/library/moby-dick.jpg"
+          "author": "Herman Melville"
         },
         {
           "title": "The Brothers Karamazov",
-          "author": "Fyodor Dostoevsky",
-          "cover": "/images/library/brothers-karamazov.jpg"
+          "author": "Fyodor Dostoevsky"
         },
         {
           "title": "Things Fall Apart",
-          "author": "Chinua Achebe",
-          "cover": "/images/library/things-fall-apart.jpg"
+          "author": "Chinua Achebe"
         },
         {
           "title": "Persepolis",
-          "author": "Marjane Satrapi",
-          "cover": "/images/library/persepolis.jpg"
+          "author": "Marjane Satrapi"
         },
         {
           "title": "The Great Gatsby",
-          "author": "F. Scott Fitzgerald",
-          "cover": "/images/library/the-great-gatsby.jpg"
+          "author": "F. Scott Fitzgerald"
         },
         {
           "title": "The Sun Also Rises",
-          "author": "Ernest Hemingway",
-          "cover": "/images/library/the-sun-also-rises.jpg"
+          "author": "Ernest Hemingway"
         },
         {
           "title": "To Kill a Mockingbird",
-          "author": "Harper Lee",
-          "cover": "/images/library/to-kill-a-mockingbird.jpg"
+          "author": "Harper Lee"
         },
         {
           "title": "The Book Thief",
-          "author": "Markus Zusak",
-          "cover": "/images/library/the-book-thief.jpg"
+          "author": "Markus Zusak"
         },
         {
           "title": "One Flew Over the Cuckoo's Nest",
-          "author": "Ken Kesey",
-          "cover": "/images/library/cuckoos-nest.jpg"
+          "author": "Ken Kesey"
         },
         {
           "title": "Slaughterhouse-Five",
-          "author": "Kurt Vonnegut",
-          "cover": "/images/library/slaughterhouse-five.jpg"
+          "author": "Kurt Vonnegut"
         },
         {
           "title": "The Things They Carried",
-          "author": "Tim O'Brien",
-          "cover": "/images/library/the-things-they-carried.jpg"
+          "author": "Tim O'Brien"
         },
         {
           "title": "Frankenstein",
-          "author": "Mary Shelley",
-          "cover": "/images/library/frankenstein.jpg"
+          "author": "Mary Shelley"
         },
         {
           "title": "Dracula",
-          "author": "Bram Stoker",
-          "cover": "/images/library/dracula.jpg"
+          "author": "Bram Stoker"
         },
         {
           "title": "'Salem's Lot",
-          "author": "Stephen King",
-          "cover": "/images/library/salems-lot.jpg"
+          "author": "Stephen King"
         },
         {
           "title": "The Parasite and Other Tales of Terror",
-          "author": "Arthur Conan Doyle",
-          "cover": "/images/library/the-parasite.jpg"
+          "author": "Arthur Conan Doyle"
         },
         {
           "title": "The Murder of Roger Ackroyd",
-          "author": "Agatha Christie",
-          "cover": "/images/library/the-murder-of-roger-ackroyd.jpg"
+          "author": "Agatha Christie"
         },
         {
           "title": "Murder on the Orient Express",
-          "author": "Agatha Christie",
-          "cover": "/images/library/murder-on-the-orient-express.jpg"
+          "author": "Agatha Christie"
         },
         {
           "title": "The Adventures of Sherlock Holmes",
-          "author": "Arthur Conan Doyle",
-          "cover": "/images/library/adventures-of-sherlock-holmes.jpg"
+          "author": "Arthur Conan Doyle"
         },
         {
           "title": "The Memoirs of Sherlock Holmes",
-          "author": "Arthur Conan Doyle",
-          "cover": "/images/library/memoirs-of-sherlock-holmes.jpg"
+          "author": "Arthur Conan Doyle"
         },
         {
           "title": "The Hound of the Baskervilles",
-          "author": "Arthur Conan Doyle",
-          "cover": "/images/library/hound-of-the-baskervilles.jpg"
+          "author": "Arthur Conan Doyle"
         },
         {
           "title": "The Adventures of Tom Sawyer",
-          "author": "Mark Twain",
-          "cover": "/images/library/tom-sawyer.jpg"
+          "author": "Mark Twain"
         },
         {
           "title": "Oliver Twist",
-          "author": "Charles Dickens",
-          "cover": "/images/library/oliver-twist.jpg"
+          "author": "Charles Dickens"
         },
         {
           "title": "The Red Badge of Courage",
-          "author": "Stephen Crane",
-          "cover": "/images/library/red-badge-of-courage.jpg"
+          "author": "Stephen Crane"
         },
         {
           "title": "The Call of the Wild",
-          "author": "Jack London",
-          "cover": "/images/library/call-of-the-wild.jpg"
+          "author": "Jack London"
         },
         {
           "title": "White Fang",
-          "author": "Jack London",
-          "cover": "/images/library/white-fang.jpg"
+          "author": "Jack London"
         },
         {
           "title": "The Iliad",
-          "author": "Homer",
-          "cover": "/images/library/the-iliad.jpg"
+          "author": "Homer"
         },
         {
           "title": "The Odyssey",
-          "author": "Homer",
-          "cover": "/images/library/the-odyssey.jpg"
+          "author": "Homer"
         },
         {
           "title": "Siddhartha",
-          "author": "Hermann Hesse",
-          "cover": "/images/library/siddhartha.jpg"
+          "author": "Hermann Hesse"
         },
         {
           "title": "The Time Machine",
-          "author": "H.G. Wells",
-          "cover": "/images/library/the-time-machine.jpg"
+          "author": "H.G. Wells"
         },
         {
           "title": "Dune",
-          "author": "Frank Herbert",
-          "cover": "/images/library/dune.jpg"
+          "author": "Frank Herbert"
         },
         {
           "title": "Dune Messiah",
-          "author": "Frank Herbert",
-          "cover": "/images/library/dune-messiah.jpg"
+          "author": "Frank Herbert"
         },
         {
           "title": "Children of Dune",
-          "author": "Frank Herbert",
-          "cover": "/images/library/children-of-dune.jpg"
+          "author": "Frank Herbert"
         },
         {
           "title": "The Martian",
-          "author": "Andy Weir",
-          "cover": "/images/library/the-martian.jpg"
+          "author": "Andy Weir"
         },
         {
           "title": "Project Hail Mary",
-          "author": "Andy Weir",
-          "cover": "/images/library/project-hail-mary.jpg"
+          "author": "Andy Weir"
         },
         {
           "title": "A Canticle for Leibowitz",
-          "author": "Walter M. Miller Jr.",
-          "cover": "/images/library/canticle-for-leibowitz.jpg"
+          "author": "Walter M. Miller Jr."
         },
         {
           "title": "1984",
-          "author": "George Orwell",
-          "cover": "/images/library/1984.jpg"
+          "author": "George Orwell"
         },
         {
           "title": "Fahrenheit 451",
-          "author": "Ray Bradbury",
-          "cover": "/images/library/fahrenheit-451.jpg"
+          "author": "Ray Bradbury"
         },
         {
           "title": "The Giver",
-          "author": "Lois Lowry",
-          "cover": "/images/library/the-giver.jpg"
+          "author": "Lois Lowry"
         },
         {
           "title": "The Road",
-          "author": "Cormac McCarthy",
-          "cover": "/images/library/the-road.jpg"
+          "author": "Cormac McCarthy"
         },
         {
           "title": "The Hobbit",
-          "author": "J.R.R. Tolkien",
-          "cover": "/images/library/the-hobbit.jpg"
+          "author": "J.R.R. Tolkien"
         },
         {
           "title": "The Fellowship of the Ring",
-          "author": "J.R.R. Tolkien",
-          "cover": "/images/library/fellowship-of-the-ring.jpg"
+          "author": "J.R.R. Tolkien"
         },
         {
           "title": "The Two Towers",
-          "author": "J.R.R. Tolkien",
-          "cover": "/images/library/two-towers.jpg"
+          "author": "J.R.R. Tolkien"
         },
         {
           "title": "The Return of the King",
-          "author": "J.R.R. Tolkien",
-          "cover": "/images/library/return-of-the-king.jpg"
+          "author": "J.R.R. Tolkien"
         },
         {
           "title": "Harry Potter and the Sorcerer's Stone",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-1-sorcerers-stone.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Chamber of Secrets",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-2-chamber-of-secrets.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Prisoner of Azkaban",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-3-prisoner-of-azkaban.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Goblet of Fire",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-4-goblet-of-fire.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Order of the Phoenix",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-5-order-of-the-phoenix.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Half-Blood Prince",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-6-half-blood-prince.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "Harry Potter and the Deathly Hallows",
-          "author": "J.K. Rowling",
-          "cover": "/images/library/hp-7-deathly-hallows.jpg"
+          "author": "J.K. Rowling"
         },
         {
           "title": "The Lightning Thief",
-          "author": "Rick Riordan",
-          "cover": "/images/library/pj-1-lightning-thief.jpg"
+          "author": "Rick Riordan"
         },
         {
           "title": "The Sea of Monsters",
-          "author": "Rick Riordan",
-          "cover": "/images/library/pj-2-sea-of-monsters.jpg"
+          "author": "Rick Riordan"
         },
         {
           "title": "The Titan's Curse",
-          "author": "Rick Riordan",
-          "cover": "/images/library/pj-3-titans-curse.jpg"
+          "author": "Rick Riordan"
         },
         {
           "title": "The Battle of the Labyrinth",
-          "author": "Rick Riordan",
-          "cover": "/images/library/pj-4-battle-of-the-labyrinth.jpg"
+          "author": "Rick Riordan"
         },
         {
           "title": "The Last Olympian",
-          "author": "Rick Riordan",
-          "cover": "/images/library/pj-5-last-olympian.jpg"
+          "author": "Rick Riordan"
         },
         {
           "title": "Watership Down",
-          "author": "Richard Adams",
-          "cover": "/images/library/watership-down.jpg"
+          "author": "Richard Adams"
         },
         {
           "title": "Atlas Shrugged",
-          "author": "Ayn Rand",
-          "cover": "/images/library/atlas-shrugged.jpg"
+          "author": "Ayn Rand"
         },
         {
           "title": "Sula",
-          "author": "Toni Morrison",
-          "cover": "/images/library/sula.jpg"
+          "author": "Toni Morrison"
         },
         {
           "title": "Their Eyes Were Watching God",
-          "author": "Zora Neale Hurston",
-          "cover": "/images/library/their-eyes-were-watching-god.jpg"
+          "author": "Zora Neale Hurston"
         },
         {
           "title": "The Name of the Wind",
-          "author": "Patrick Rothfuss",
-          "cover": "/images/library/the-name-of-the-wind.jpg"
+          "author": "Patrick Rothfuss"
         },
         {
           "title": "Cloud Atlas",
-          "author": "David Mitchell",
-          "cover": "/images/library/cloud-atlas.jpg"
+          "author": "David Mitchell"
         }
       ]
     },
@@ -345,18 +278,15 @@
       "books": [
         {
           "title": "Hamlet",
-          "author": "William Shakespeare",
-          "cover": "/images/library/hamlet.jpg"
+          "author": "William Shakespeare"
         },
         {
           "title": "Macbeth",
-          "author": "William Shakespeare",
-          "cover": "/images/library/macbeth.jpg"
+          "author": "William Shakespeare"
         },
         {
           "title": "King Lear",
-          "author": "William Shakespeare",
-          "cover": "/images/library/king-lear.jpg"
+          "author": "William Shakespeare"
         }
       ]
     },
@@ -369,43 +299,35 @@
         },
         {
           "title": "Meditations",
-          "author": "Marcus Aurelius",
-          "cover": "/images/library/meditations.jpg"
+          "author": "Marcus Aurelius"
         },
         {
           "title": "Discourses and Selected Writings",
-          "author": "Epictetus",
-          "cover": "/images/library/epictetus-discourses.jpg"
+          "author": "Epictetus"
         },
         {
           "title": "The Bible",
-          "author": "",
-          "cover": "/images/library/the-bible.jpg"
+          "author": ""
         },
         {
           "title": "The Bhagavad Gita",
-          "author": "",
-          "cover": "/images/library/bhagavad-gita.jpg"
+          "author": ""
         },
         {
           "title": "Mere Christianity",
-          "author": "C.S. Lewis",
-          "cover": "/images/library/mere-christianity.jpg"
+          "author": "C.S. Lewis"
         },
         {
           "title": "Man's Search for Meaning",
-          "author": "Viktor E. Frankl",
-          "cover": "/images/library/mans-search-for-meaning.jpg"
+          "author": "Viktor E. Frankl"
         },
         {
           "title": "The Sunflower",
-          "author": "Simon Wiesenthal",
-          "cover": "/images/library/the-sunflower.jpg"
+          "author": "Simon Wiesenthal"
         },
         {
           "title": "The Duck That Won the Lottery",
-          "author": "Julian Baggini",
-          "cover": "/images/library/duck-that-won-the-lottery.jpg"
+          "author": "Julian Baggini"
         }
       ]
     },
@@ -414,13 +336,11 @@
       "books": [
         {
           "title": "Leonardo da Vinci",
-          "author": "Walter Isaacson",
-          "cover": "/images/library/leonardo-da-vinci.jpg"
+          "author": "Walter Isaacson"
         },
         {
           "title": "Steve Jobs",
-          "author": "Walter Isaacson",
-          "cover": "/images/library/steve-jobs.jpg"
+          "author": "Walter Isaacson"
         },
         {
           "title": "Benjamin Franklin",
@@ -428,108 +348,87 @@
         },
         {
           "title": "Unbroken",
-          "author": "Laura Hillenbrand",
-          "cover": "/images/library/unbroken.jpg"
+          "author": "Laura Hillenbrand"
         },
         {
           "title": "In Cold Blood",
-          "author": "Truman Capote",
-          "cover": "/images/library/in-cold-blood.jpg"
+          "author": "Truman Capote"
         },
         {
           "title": "Night",
-          "author": "Elie Wiesel",
-          "cover": "/images/library/night.jpg"
+          "author": "Elie Wiesel"
         },
         {
           "title": "The Cave and the Light",
-          "author": "Arthur Herman",
-          "cover": "/images/library/the-cave-and-the-light.jpg"
+          "author": "Arthur Herman"
         },
         {
           "title": "Guns, Germs, and Steel",
-          "author": "Jared Diamond",
-          "cover": "/images/library/guns-germs-and-steel.jpg"
+          "author": "Jared Diamond"
         },
         {
           "title": "Capitalism and Freedom",
-          "author": "Milton Friedman",
-          "cover": "/images/library/capitalism-and-freedom.jpg"
+          "author": "Milton Friedman"
         },
         {
           "title": "The Road to Serfdom",
-          "author": "F.A. Hayek",
-          "cover": "/images/library/road-to-serfdom.jpg"
+          "author": "F.A. Hayek"
         },
         {
           "title": "Freakonomics",
-          "author": "Steven D. Levitt & Stephen J. Dubner",
-          "cover": "/images/library/freakonomics.jpg"
+          "author": "Steven D. Levitt & Stephen J. Dubner"
         },
         {
           "title": "What If?",
-          "author": "Randall Munroe",
-          "cover": "/images/library/what-if.jpg"
+          "author": "Randall Munroe"
         },
         {
           "title": "Thing Explainer",
-          "author": "Randall Munroe",
-          "cover": "/images/library/thing-explainer.jpg"
+          "author": "Randall Munroe"
         },
         {
           "title": "The Astronomy Bible",
-          "author": "Heather Couper & Nigel Henbest",
-          "cover": "/images/library/astronomy-bible.jpg"
+          "author": "Heather Couper & Nigel Henbest"
         },
         {
           "title": "12 Rules for Life",
-          "author": "Jordan B. Peterson",
-          "cover": "/images/library/12-rules-for-life.jpg"
+          "author": "Jordan B. Peterson"
         },
         {
           "title": "Beyond Order: 12 More Rules for Life",
-          "author": "Jordan B. Peterson",
-          "cover": "/images/library/beyond-order.jpg"
+          "author": "Jordan B. Peterson"
         },
         {
           "title": "Principles: Life and Work",
-          "author": "Ray Dalio",
-          "cover": "/images/library/principles-dalio.jpg"
+          "author": "Ray Dalio"
         },
         {
           "title": "Deep Work",
-          "author": "Cal Newport",
-          "cover": "/images/library/deep-work.jpg"
+          "author": "Cal Newport"
         },
         {
           "title": "Atomic Habits",
-          "author": "James Clear",
-          "cover": "/images/library/atomic-habits.jpg"
+          "author": "James Clear"
         },
         {
           "title": "Extreme Programming Installed",
-          "author": "Ron Jeffries",
-          "cover": "/images/library/extreme-programming-installed.jpg"
+          "author": "Ron Jeffries"
         },
         {
           "title": "Of Boys and Men",
-          "author": "Richard Reeves",
-          "cover": "/images/library/of-boys-and-men.jpg"
+          "author": "Richard Reeves"
         },
         {
           "title": "The 48 Laws of Power",
-          "author": "Robert Greene",
-          "cover": "/images/library/48-laws-of-power.jpg"
+          "author": "Robert Greene"
         },
         {
           "title": "In the Footsteps of Jesus",
-          "author": "Jean-Pierre Isbouts",
-          "cover": "/images/library/in-the-footsteps-of-jesus.jpg"
+          "author": "Jean-Pierre Isbouts"
         },
         {
           "title": "The Little Book of Bonsai",
-          "author": "Jonas Dupuich",
-          "cover": "/images/library/little-book-of-bonsai.jpeg"
+          "author": "Jonas Dupuich"
         }
       ]
     }

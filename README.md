@@ -1,137 +1,124 @@
 # The Workshop
 
-A personal site styled as a *Renaissance workshop* — a lifelong notebook,
-laboratory, and library rolled into one. Built with [Hugo](https://gohugo.io/)
-(Extended). 
-
-This repository contains the source, layouts, styling, and content for the site.
+Alaric Hunziker's personal website and digital codex, built with
+[Hugo](https://gohugo.io/) Extended and Dart Sass. The source, layouts, fonts,
+and styling are self-contained in this repository.
 
 ## Requirements
 
-Hugo **Extended** and **Dart Sass** — the SCSS uses `@use` modules, which need
-the Dart Sass transpiler (Hugo's bundled libsass won't compile them).
+The SCSS uses `@use` modules and Hugo's Dart Sass transpiler.
 
 ```sh
-brew install hugo dart-sass        # macOS
+brew install hugo dart-sass
 ```
 
-## Develop
+## Develop and build
 
 ```sh
-make run     # hugo server -D --noHTTPCache --disableFastRender → http://localhost:1313
-make build   # production build into ./public
+make run     # preview at http://localhost:1313
+make build   # clean and regenerate public/ and dist/
+make clean   # remove both build folders and the generated resource cache
 ```
 
-## Structure
+`make build` removes previous output before building, then copies the fresh
+`public/` output to `dist/`. Both folders are ignored by Git. Edit the source
+files rather than generated HTML.
 
-```
-hugo.toml              site config, menu, params, markup
+## Pages and structure
+
+The home page shows Leonardo da Vinci's aerial screw, an introduction, and
+links to six sections: Notebook, Research, ExecuTorch Contributions, Oil Paintings,
+Library, and About. Oil Paintings uses the `/arts/` route; its subsection cards
+are hidden with `params.show_subsections = false`.
+Notebook, Research, ExecuTorch Contributions, Oil Paintings, and the three
+hidden subsections currently show empty-state messages. Library lists book titles and authors in
+collapsible groups. About contains a biography and a race-results table.
+
+```text
+hugo.toml                 site title, navigation, theme and social settings
 content/
-  _index.md            home lead paragraph
-  notebook/            essays & engineering notes   (section)
-  laboratory/          shaders, sims, sketches      (section)
-  library/             annotated references         (section)
-  about.md             about page
+  _index.md               home introduction
+  notebook/_index.md      Notebook title and description
+  laboratory/_index.md    Research title and description
+  library/_index.md       Library title and description
+  arts/_index.md          Oil Paintings title and description
+  arts/oil-paintings/_index.md Oil Paintings (redirects from /oil-paintings/)
+  arts/photography/_index.md Photography title and description
+  arts/classical-guitar/_index.md Classical Guitar title and description
+  executorch-contributions/_index.md ExecuTorch Contributions title and description
+  about.md                biography and race results
 layouts/
-  _default/baseof.html shell + inline theme bootstrap
-  index.html           home: lead + the four rooms + recent
-  _default/list.html   section index (year-gutter list)
-  _default/single.html post: masthead, hero, content + sticky TOC
-  library/list.html    Library bookshelf: cover grid grouped by theme
-  partials/            head, top-nav, footer, hero, entry-list, icon
-  _markup/             render hooks (heading anchors)
-data/
-  library.json         the bookshelf: theme groups + per-book cover/Goodreads
+  index.html              home introduction and section cards
+  _default/baseof.html    shared page shell and theme initialization
+  _default/list.html      section cards, parent links, and empty states
+  _default/about.html     About page
+  library/list.html       text-only Library and publication links
+  partials/               head, navigation, footer and social icons
+data/library.json         Library groups, book titles and authors
+BOOKS.md                  Markdown copy of the reading list
 assets/
-  scss/                design tokens + styles (entry: main.scss)
-  js/theme-toggle.js   light/dark switch
+  scss/                   styles, fonts and design tokens
+  js/theme-toggle.js      light/dark switch
 static/
-  favicon.png          site icon (Leonardo church study) + favicon-32, apple-touch
-  fonts/               vendored Libre Caslon .woff2 files
-  sketches/            ES-module canvas/WebGL sketches for Laboratory heroes
-  images/
-archetypes/            `hugo new` templates per section
-.github/workflows/     GitHub Pages deploy
+  favicon.png             AH monogram icon
+  favicon-32.png          small browser icon
+  apple-touch-icon.png    Apple touch icon
+  fonts/                  vendored Libre Caslon fonts
+  images/aerial_screw.png home illustration
+  images/favicon-monogram.png  favicon master image
+.github/workflows/deploy.yml   GitHub Pages deployment
+.openai/hosting.json           Sites project and static output configuration
 ```
 
-## Writing
+## Editing content
 
-```sh
-make new-notebook name=on-compilers     # → content/notebook/on-compilers.md
-make new-lab      name=reaction-diffusion
-make new-library  name=godel-escher-bach
-```
+Edit the Markdown files under `content/` to change the page copy. Section
+front matter supplies the titles and descriptions used on the section pages
+and home cards.
 
-New pages start as `draft = true`; `make run` shows drafts, `make build` hides
-them.
+The Library is driven by `data/library.json`. Each group has a `name` and a
+`books` array; each book has a `title` and an `author` (which may be empty).
+Preserve group and book order to control the display order. Update `BOOKS.md`
+when changing the reading list; it is a reference copy and is not rendered or
+automatically regenerated by the build. All 103 current books are retained.
 
-### Frontmatter
+Publication links are defined in `layouts/library/list.html`. Books display
+as plain text without cover images or outbound links.
 
-```toml
-title       = 'Title'
-date        = 2026-06-16
-description  = 'One-line subtitle, shown under the title and in indexes.'
-tags        = ['graphics']
-toc         = true            # sticky table of contents (notebook default)
-hero        = '/sketches/x.js'  # optional; see below
-```
-
-### Heroes (Laboratory)
-
-A post can mount a visual above its title via `hero`, routed by extension:
-
-| `hero` value            | Renders                                      |
-| ----------------------- | -------------------------------------------- |
-| `/sketches/foo.js`      | `<canvas>` + your ES-module (WebGL / shader) |
-| `/images/foo.png\|gif…` | `<img>`                                      |
-| `/videos/foo.mp4\|webm` | autoplaying, looping, muted `<video>`        |
-
-A sketch module grabs `document.querySelector('[data-hero-canvas]')` and draws
-into it.
+Article templates, post creation commands, recent-post lists, heroes, tables
+of contents, heading-anchor hooks, syntax-highlighting styles and tag pages
+have been removed. Notebook and Research currently have no article system.
 
 ## Theming
 
-Colors and type live as CSS custom properties in
-[`assets/scss/_tokens.scss`](assets/scss/_tokens.scss). Light mode is parchment /
-graphite / muted bronze; dark mode is true black with the same bronze accent.
-The toggle sits in the top nav; the default theme is set by `params.defaultTheme`
-in `hugo.toml` (`light` | `dark` | `auto`).
+Colors, type and spacing are defined in `assets/scss/_tokens.scss`. Light mode
+uses parchment, graphite and bronze; dark mode uses black with bronze accents.
+Set `params.defaultTheme` in `hugo.toml` to `light`, `dark` or `auto`. The nav
+switch saves the visitor's selected theme locally.
 
-Body and titles are set in **Libre Caslon** (a free revival of the Caslon used
-by 18th-century presses) — Text cut for body, Display cut for the large titles.
-The `.woff2` files are **vendored** in `static/fonts/`, with `@font-face` rules
-in [`assets/scss/_fonts.scss`](assets/scss/_fonts.scss) (no external request).
-That file is generated from the Google Fonts CSS; to refresh or add weights,
-re-run the download and regenerate it.
+Libre Caslon Text is used for body text and Libre Caslon Display for large
+headings. Navigation uses system sans-serif fonts. The Caslon `.woff2` files
+are vendored in `static/fonts/` and loaded by `assets/scss/_fonts.scss`.
 
-The favicon is an `AH` monogram set in Libre Caslon Display — charcoal on a
-parchment field with a bronze hairline frame, matching the light theme. The
-PNGs (`favicon.png`, `favicon-32.png`, `apple-touch-icon.png`) live in `static/`,
-with a 512px master at `static/images/favicon-monogram.png`. It was rendered
-from the vendored font; to regenerate, re-run the render script (Pillow + the
-woff2 converted to TTF via fontTools).
+The favicon is an AH monogram, with a master image at
+`static/images/favicon-monogram.png`. Its browser and touch variants are in
+`static/`; no favicon-generation script is included.
 
-### Social icons
+Social links are configured under `params.social` in `hugo.toml`; their SVGs
+are in `layouts/partials/icon.html`. The current GitHub and LinkedIn URLs are
+still generic homepages and should be replaced with profile URLs when ready.
 
-The top-nav icon links come from `params.social` in `hugo.toml` (`name`, `icon`,
-`url`). Inline SVGs live in [`partials/icon.html`](layouts/partials/icon.html)
-(currently `github` + `linkedin`) — fill in your own URLs there. Add another by
-giving it an `icon` key and a matching `<svg>` branch in the partial.
+## Hosting
 
-## Optional next steps
+Two deployment configurations are present:
 
-- **KaTeX**: math passthrough is configured in `hugo.toml`; add the KaTeX
-  CSS/JS (drop into `static/katex/` and load in `partials/head.html`) to render.
-- **Search**: a home/section search can be added later (nathan.rs builds a JSON
-  index).
+- **GitHub Pages:** `.github/workflows/deploy.yml` builds Hugo on pushes to
+  `main` or manual runs and publishes `public/`. It supplies the Pages base URL
+  during the build. Configure the repository's Pages source as GitHub Actions.
+- **Sites:** `.openai/hosting.json` identifies the existing Sites project and
+  uses `dist/` as the static output directory. Run `make build` to prepare fresh
+  output before publishing through Sites. A local build does not publish it.
 
-## Library bookshelf
-
-The Library section is a grid of books grouped by theme (à la
-jordanbpeterson.com/books). It is data-driven.
-
-## Deploy
-
-`.github/workflows/deploy.yml` builds with Hugo Extended and publishes `./public`
-to GitHub Pages. In the repo settings set **Pages → Source → GitHub Actions**.
-For a custom domain, add `static/CNAME` containing the domain.
+The default `baseURL` in `hugo.toml` is still `https://example.com/`. Set it to
+the intended site origin or override it during a deployment build so generated
+metadata and feed URLs use the correct domain.

@@ -1,22 +1,13 @@
-# Requires Hugo Extended (SCSS support). Install: https://gohugo.io/installation/
-# macOS:  brew install hugo
+# Requires Hugo Extended and Dart Sass: brew install hugo dart-sass
 
-.PHONY: run build clean new-notebook new-lab new-library
+.PHONY: run build clean
 
-run:            ## Local dev server with drafts
-	hugo server -D --noHTTPCache --disableFastRender
+run:            ## Local preview
+	hugo server --noHTTPCache --disableFastRender
 
-build:          ## Production build into ./public
+build: clean    ## Fresh output for GitHub Pages and Sites
 	hugo --minify --gc
+	cp -R public dist
 
 clean:
-	rm -rf public resources/_gen
-
-new-notebook:   ## make new-notebook name=my-essay
-	hugo new content notebook/$(name).md --kind notebook
-
-new-lab:        ## make new-lab name=my-experiment
-	hugo new content laboratory/$(name).md --kind laboratory
-
-new-library:    ## make new-library name=some-book
-	hugo new content library/$(name).md --kind library
+	rm -rf public dist resources/_gen
