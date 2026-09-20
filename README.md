@@ -115,6 +115,6 @@ Two deployment configurations are present:
   uses `dist/` as the static output directory. Run `make build` to prepare fresh
   output before publishing through Sites. A local build does not publish it.
 
-The default `baseURL` in `hugo.toml` is still `https://example.com/`. Set it to
+The default `baseURL` in `hugo.toml` is `https://www.alarichunz.com/`. Set it to
 the intended site origin or override it during a deployment build so generated
 metadata and feed URLs use the correct domain.

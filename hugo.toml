@@ -7,7 +7,7 @@
 #  Build:       make build   (clean production output in ./public and ./dist)
 # =============================================================================
 
-baseURL    = 'https://alarichunz.com/'
+baseURL    = 'https://www.alarichunz.com/'
 title      = 'Alaric Hunziker'
 defaultContentLanguage = 'en'
 copyright  = '© 2026 Alaric Hunziker'
