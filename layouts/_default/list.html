@@ -23,15 +23,8 @@
   </section>
   {{ end }}
 
-  {{ $pages := .RegularPages.ByDate.Reverse }}
-  {{ with $pages }}
-  <div class="section-index">
-    {{ partial "entry-list.html" . }}
-  </div>
-  {{ else }}
   {{ if not $sections }}
   <p class="section-empty">Nothing here yet — this section of the codex is being set up.</p>
-  {{ end }}
   {{ end }}
 </article>
 {{ end }}
