@@ -37,7 +37,7 @@ hugo.toml                 site title, navigation, theme and social settings
 content/
   _index.md               home introduction
   notebook/_index.md      Notebook title and description
-  laboratory/_index.md    Research title and description
+  research/_index.md      Research title and description
   library/_index.md       Library title and description
   oil-paintings/_index.md Oil Paintings title and description
   executorch-contributions/_index.md ExecuTorch Contributions title and description

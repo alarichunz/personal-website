@@ -7,7 +7,7 @@
 #  Build:       make build   (clean production output in ./public and ./dist)
 # =============================================================================
 
-baseURL    = 'https://example.com/'
+baseURL    = 'https://alarichunz.com/'
 title      = 'Alaric Hunziker'
 defaultContentLanguage = 'en'
 copyright  = '© 2026 Alaric Hunziker'
@@ -32,7 +32,7 @@ disableKinds = ['taxonomy', 'term']
     weight = 10
   [[menu.main]]
     name = 'Research'
-    pageRef = '/laboratory'
+    pageRef = '/research'
     weight = 20
   [[menu.main]]
     name = 'ExecuTorch Contributions'
@@ -53,7 +53,7 @@ disableKinds = ['taxonomy', 'term']
 
 # -- Site params ---------------------------------------------------------------
 [params]
-  description = 'The lifelong workshop of an engineer-artist — essays, experiments, and a reading library.'
+  description = 'The lifelong workshop of an engineer with notes, research, and a reading library.'
   author      = 'Alaric Hunziker'
 
   # Default color theme: 'light' | 'dark' | 'auto'
@@ -64,8 +64,8 @@ disableKinds = ['taxonomy', 'term']
   [[params.social]]
     name = 'GitHub'
     icon = 'github'
-    url  = 'https://github.com/'        # TODO: your profile
+    url  = 'https://github.com/alarichunz'
   [[params.social]]
     name = 'LinkedIn'
     icon = 'linkedin'
-    url  = 'https://www.linkedin.com/'  # TODO: your profile
+    url  = 'https://www.linkedin.com/in/alaric-hunz34712'
