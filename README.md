@@ -1,4 +1,4 @@
-# The Workshop
+# Alaric's Personal Website
 
 Alaric Hunziker's personal website and digital codex, built with
 [Hugo](https://gohugo.io/) Extended and Dart Sass. The source, layouts, fonts,
