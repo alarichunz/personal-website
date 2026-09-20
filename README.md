@@ -28,10 +28,8 @@ files rather than generated HTML.
 
 The home page shows Leonardo da Vinci's aerial screw, an introduction, and
 links to six destinations: Notebook, Research, ExecuTorch Contributions, Oil Paintings,
-Library, and About. Oil Paintings uses the `/arts/` route; its subsection cards
-are hidden with `params.show_subsections = false`.
-Notebook, Research, ExecuTorch Contributions, Oil Paintings, and the three
-hidden subsections currently show empty-state messages. Library lists book titles and authors in
+Library, and About. Notebook, Research, ExecuTorch Contributions, and Oil Paintings
+currently show empty-state messages. Library lists book titles and authors in
 collapsible groups. About contains a biography.
 
 ```text
@@ -41,10 +39,7 @@ content/
   notebook/_index.md      Notebook title and description
   laboratory/_index.md    Research title and description
   library/_index.md       Library title and description
-  arts/_index.md          Oil Paintings title and description
-  arts/oil-paintings/_index.md Oil Paintings (redirects from /oil-paintings/)
-  arts/photography/_index.md Photography title and description
-  arts/classical-guitar/_index.md Classical Guitar title and description
+  oil-paintings/_index.md Oil Paintings title and description
   executorch-contributions/_index.md ExecuTorch Contributions title and description
   about.md                biography
 layouts/

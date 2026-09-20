@@ -40,7 +40,7 @@ disableKinds = ['taxonomy', 'term']
     weight = 30
   [[menu.main]]
     name = 'Oil Paintings'
-    pageRef = '/arts'
+    pageRef = '/oil-paintings'
     weight = 40
   [[menu.main]]
     name = 'Library'
