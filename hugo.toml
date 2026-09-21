@@ -35,8 +35,8 @@ disableKinds = ['taxonomy', 'term']
     pageRef = '/research'
     weight = 20
   [[menu.main]]
-    name = 'ExecuTorch Contributions'
-    pageRef = '/executorch-contributions'
+    name = 'Open-Source'
+    pageRef = '/open-source'
     weight = 30
   [[menu.main]]
     name = 'Oil Paintings'

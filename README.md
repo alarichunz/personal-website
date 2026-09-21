@@ -27,8 +27,8 @@ files rather than generated HTML.
 ## Pages and structure
 
 The home page shows Leonardo da Vinci's aerial screw, an introduction, and
-links to six destinations: Notebook, Research, ExecuTorch Contributions, Oil Paintings,
-Library, and About. Notebook, Research, ExecuTorch Contributions, and Oil Paintings
+links to six destinations: Notebook, Research, Open-Source, Oil Paintings,
+Library, and About. Notebook, Research, Open-Source, and Oil Paintings
 currently show empty-state messages. Library lists book titles and authors in
 collapsible groups. About contains a biography.
 
@@ -40,7 +40,7 @@ content/
   research/_index.md      Research title and description
   library/_index.md       Library title and description
   oil-paintings/_index.md Oil Paintings title and description
-  executorch-contributions/_index.md ExecuTorch Contributions title and description
+  open-source/_index.md     Open-Source title and description
   about.md                biography
 layouts/
   index.html              home introduction and section cards
